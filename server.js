@@ -56,6 +56,11 @@ app.get('/bad', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: "Gordon Whu's Todo List"
+  })
+})
 app.listen(port, () => {
   console.log(`Server is up on ${port}.`);
 });
